@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome untuk ikon hati -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      /* Menyusun card secara horizontal dan vertikal */
+      .d-flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      /* Memperbesar ukuran card dan menghapus border */
+      .card {
+        width: 30rem; /* Menentukan lebar card yang lebih besar */
+        margin-top: 50px; /* Menambahkan margin atas agar card tidak bertabrakan dengan animasi */
+        border: none; /* Menghapus border card */
+      }
+      /* Memperbesar ukuran teks di dalam card */
+      .card-title {
+        font-size: 2rem; /* Memperbesar ukuran judul */
+      }
+      .card-text {
+        font-size: 1.2rem; /* Memperbesar ukuran teks */
+      }
+      /* Mengatur ikon hati */
+      .heart-icon {
+        font-size: 8rem; /* Ukuran hati lebih besar */
+        color: #e91e63; /* Warna merah muda */
+        animation: bounce 2s infinite; /* Menambahkan animasi bounce */
+        margin-bottom: 20px; /* Memberikan jarak antara ikon dan judul */
+      }
+
+      /* Animasi bounce untuk ikon hati */
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-40px); /* Bergerak ke atas lebih jauh */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex-center">
+      <div class="card">
+        <div class="card-body text-center">
+          <!-- Ikon hati yang lebih besar di atas -->
+          <div>
+            <i class="fas fa-heart heart-icon"></i>
+          </div>
+          <h5 class="card-title">Beberapa tindakanmu bisa membuat orang lain bahagia</h5>
+          <p class="card-text">Jika ada satu hal di dunia ini yang kutakutkan akan hilang, itu adalah kamu. Aku sangat mencintaimu sehingga aku tidak sanggup kehilanganmu.</p>
+          <a href="index.html" class="btn btn-primary">Kembali</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
